@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Costo agua</title>
+</head>
+<body>
+    <h1 class="text-center mt-3 text-danger">Cálculo de costo de agua</h1>
+    <div class="container">
+        <div class="jumbotron bg-dark">
+            <div class="row col-12">
+                <label for="" class="col-3 text-light mr-3" >Largo</label>
+                <input id="largo" type="number" class="col-8">
+            </div>
+            <div class="row col-12">
+                <label for="" class="col-3 text-light mr-3" >Ancho</label>
+                <input id="ancho"  type="number" class="col-8">
+            </div>
+            <div class="row col-12">
+                <label for="" class="col-3 text-light mr-3" >Profundidad</label>
+                <input id="profundidad" type="number" class="col-8">
+            </div>
+            <div class="row col-12">
+                <label for="" class="col-3 text-light mr-3" >Precio Agua</label>
+                <input id="precioagua" type="number" class="col-8">
+            </div>
+            <button id="btnCalcular" type="button" class="btn btn-primary col-12 mt-3" >Calcular</button>
+            <div>
+                <div id="imprimirprecio" class="alert alert-danger col-12 mt-3 text-center" role="alert" >Costo</div>
+            </div>
+            
+        </div>        
+    </div>
+    <script src="./../js/app.js"></script>
+</body>
+</html>
