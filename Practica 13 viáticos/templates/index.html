@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Viaticos</title>
+</head>
+<body>
+    <h1 class="text-center mt-3">Calculo de viaticos</h1>
+    <div class="container">
+        <div class="jumbotron bg-warning">
+            <div class="row col-12 mt-3">
+                <label for="" class="col-6">Días</label>
+                <input type="number" id="dias" class="col-6">
+            </div>
+            <div class="row col-12 mt-3">
+                <label for="" class="col-6">Costo Noche de Hotel</label>
+                <input type="number" id="hotel" class="col-6">
+            </div>
+            <div class="row col-12 mt-3">
+                <label for="" class="col-6">Costo Comida por Dia</label>
+                <input type="number" id="comida" class="col-6">
+            </div>
+            <div class="row col-12 mt-3">
+                <label for="" class="col-6">Efectivo por Día</label>
+                <label for="" class="text-center col-6">$100.00</label>
+            </div>
+            <button class="btn btn-info col-12" id="btncalcular">Calcular</button>
+            <div class="alert alert-danger mt-3 text-center" id="viaticos">Viaticos</div>
+        </div>
+    </div>
+    
+    <script src="./../js/app.js"></script>
+</body>
+</html>
