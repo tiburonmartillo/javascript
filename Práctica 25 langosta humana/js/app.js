@@ -11,18 +11,18 @@ function cotizar(){
     let costomasde300 = personas * 75;
     if(personas<200){
         
-        let imprimircotizacion = `<div class="alert alert-danger mt-3 text-center"> <p>Para ${personas} personas el precio por persona es de $95 y el total es de $ ${costomenosde200}</p> </div>`
+        let imprimircotizacion = `<div class="alert alert-danger mt-3 text-center"> <p>Para ${personas} personas el precio por persona es de $95 y el total es de $${costomenosde200}</p> </div>`
 
         imprimircot.innerHTML = imprimircotizacion;
     } else if(personas>=200 && personas<300){
 
-        let imprimircotizacion = `<div class="alert alert-danger mt-3 text-center"> <p>Para ${personas} personas el precio por persona es de $85 y el total es de $ ${costomenosde300}</p> </div>`
+        let imprimircotizacion = `<div class="alert alert-danger mt-3 text-center"> <p>Para ${personas} personas el precio por persona es de $85 y el total es de $${costomenosde300}</p> </div>`
 
         imprimircot.innerHTML = imprimircotizacion;
     }
      else if(personas>300){
 
-        let imprimircotizacion = `<div class="alert alert-danger mt-3 text-center"> <p>Para ${personas} personas el precio por persona es de $75 y el total es de $ ${costomasde300}</p> </div>`
+        let imprimircotizacion = `<div class="alert alert-danger mt-3 text-center"> <p>Para ${personas} personas el precio por persona es de $75 y el total es de $${costomasde300}</p> </div>`
 
         imprimircot.innerHTML = imprimircotizacion;
     }
