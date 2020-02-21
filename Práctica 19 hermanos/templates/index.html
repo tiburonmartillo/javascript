@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Hermanos</title>
+</head>
+<body>
+    <h1 class="text-center mt-3">Calcular la diferencia de edad entre 2 hermanos</h1>
+    <div class="container">
+        <div class="jumbotron bg-info">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Nombre" id="nombre1">
+                <input type="number" class="form-control" placeholder="Edad" id="edad1">
+                <div class="input-group-append">
+                  <span class="input-group-text">Primer hermano</span>
+                </div>
+              </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Nombre" id="nombre2">
+                <input type="number" class="form-control" placeholder="Edad" id="edad2">
+                <div class="input-group-append">
+                  <span class="input-group-text">Segundo hermano</span>
+                </div>
+              </div>
+              <button class="btn btn-outline-warning col-12" id="btncalcular">Calcular edades</button>
+              <div id="imprimir"></div>
+        </div>
+    </div>
+    <script src="./../js/app.js"></script>
+</body>
+</html>
