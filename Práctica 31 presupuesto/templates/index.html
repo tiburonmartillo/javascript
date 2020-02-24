@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Presupuesto</title>
+</head>
+<body>
+    <h1 class="text-center text-info mt-3">Presupuesto</h1>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">Presupuesto</span>
+                </div>
+                <input type="number" class="form-control" placeholder="Ingrese el presupuesto" aria-label="Username" aria-describedby="basic-addon1" id="presupuesto">
+                <div class="input-group mt-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">Productos</span>
+                    </div>
+                    <input type="number" id="producto1"  class="form-control">
+                    <input type="number" id="producto2" class="form-control">
+                    <input type="number" id="producto3"  class="form-control">
+                    <input type="number" id="producto4" class="form-control">
+                  </div>
+              </div>
+              <button class="btn btn-info col-12" id="btnCalcular">Calcular</button>
+              <div id="imprimir"></div>
+        </div>
+    </div>
+    
+    <script src="./../js/app.js"></script>
+</body>
+</html>
