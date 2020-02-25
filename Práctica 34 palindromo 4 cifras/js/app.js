@@ -11,10 +11,6 @@ function comparar(){
         decenas = (numero % 100) / 10;
         centenas = (numero/100) % 10;
         millar = numero/1000;
-    console.log(unidades);
-    console.log(decenas);
-    console.log(centenas);
-    console.log(millar);
     if(unidades == Math.trunc(millar) && Math.trunc(decenas) == Math.trunc(centenas)){
         comparacion = `Sí es`;
     }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Uvas</title>
+</head>
+<body>
+    <h1 class="text-center mt-3 text-danger">Asociación de Vinicultores</h1>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-danger" type="button" id="btnCalcular">Calcular</button>
+                </div>
+                <select class="custom-select" id="tipo">
+                  <option selected>Tipo</option>
+                  <option value="1">A</option>
+                  <option value="2">B</option>
+                </select>
+                <select class="custom-select" id="tamaño">
+                  <option selected>Tamaño</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+              </div>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Kilos</span>
+                </div>
+                <input type="number" aria-label="First name" class="form-control" id="kilos">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Precio</span>
+                  </div>
+                <input type="number" aria-label="Last name" class="form-control" id="precio">
+              </div>
+              <div id="imprimir"></div>
+        </div>
+    </div>
+    
+    <script src="./../js/app.js"></script>
+</body>
+</html>
