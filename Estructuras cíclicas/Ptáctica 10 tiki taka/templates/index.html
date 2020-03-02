@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <h1 class="text-center mt-3">Tienda Tiki Taka</h1>
+      <div class="container">
+          <button class="btn btn-outline-warning mt-3 col" id="btnInit">Número de ventas</button>
+          
+          <table class="table mt-3 text-center">
+              <tr>
+                  <th>Mayores de $1000</th>
+                  <th>Mayores de $500</th>
+                  <th>Menores de $500</th>
+                </tr>
+                
+                <tr>
+                    <td><ul id="lista1000" class="list-group text-danger"></ul></td>
+                    <td><ul id="lista500" class="list-group text-info"></ul></td>
+                    <td><ul id="lista-500" class="list-group text-success"></ul></td>
+                </tr>    
+            </table>
+        </div>
+        <div class="mx-auto mt-3" style="width: 400px;">
+            <div class="alert alert-success text-center" id="zonaPrint">Total de Ventas</div>
+          </div>
+    <script src="./../js/app.js"></script>
+   </body>
+</html>
