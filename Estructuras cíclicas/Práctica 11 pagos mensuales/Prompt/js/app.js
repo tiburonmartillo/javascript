@@ -12,9 +12,9 @@ function iniciarApp(){
 
         let resultado = pagoPrimermes*(Math.pow(2,numerodemeses)-1);
         
-        
         const ZonaImprimir = document.getElementById('output');
         
         ZonaImprimir.innerHTML = `El total de la suma de los ${numerodemeses} pagos es $${resultado}`
-    
-}
+        
+        console.log(resultado)
+    }
