@@ -8,6 +8,7 @@ function eventListener(){
 function iniciarApp(){
     let numero = 0;
     numero = Number(prompt('Ingrese un número'));
+    
     const listGroup = document.getElementById('listaULAM');
     
     while(numero!=1){
@@ -15,7 +16,7 @@ function iniciarApp(){
             numero/=2
         }else {numero=(numero*3)+1}
         
-        console.log(numero);
+       
         
         const li = document.createElement('li');
         li.setAttribute('class','list-group-item');
