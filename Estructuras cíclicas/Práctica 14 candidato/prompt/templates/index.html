@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="jumbotron">
+        <div class="mx-auto" style="width: 800px;">
+            <label class="text-center mt-3">Supóngase que en una reciente elección hubo cuatro candidatos (con identificadores 1, 2, 3, 4). Calcular el número de votos correspondientes a cada candidato y el porcentaje que obtuvo respecto al total de votantes. El programa finalizara cuando el usuario teclee un 0.</label>
+            <button class="btn btn-outline-primary col mt-3" id="btnInit">Iniciar</button>
+        </div>
+        <table class="table mt-3 text-center col-11">
+            <tr>
+                <th>Candidato 1</th>
+                <th>Candidato 2</th>
+                <th>Candidato 3</th>
+                <th>Candidato 4</th>
+              </tr>
+            </table>
+              <div class="container">
+                <div class="row">
+                  <div class="col" id="ResultadoCandidato1">
+                  </div>
+                  <div class="col" id="ResultadoCandidato2">            
+                  </div>
+                  <div class="col" id="ResultadoCandidato3">
+                  </div>
+                  <div class="col" id="ResultadoCandidato4">
+                  </div>
+                </div>
+              </div>
+               
+          <div class="mx-auto mt-3" style="width: 400px;">
+            <div class="alert alert-success text-center" id="zonaPrint">Total de Ventas</div>
+          </div>
+        </div>
+    <script src="./../js/app.js"></script>
+  </body>
+</html>
