@@ -15,5 +15,13 @@ function iniciarApp(){
 
         numeroX=numeroY;
         numeroY=resultado;
+
+        const li = document.createElement('li');
+        li.setAttribute('class','list-group-item');
+        li.innerText=`${numeroY}`;
+        listGroup.appendChild(li);
+
+        console.log(numeroX);
+        
     }
 }
