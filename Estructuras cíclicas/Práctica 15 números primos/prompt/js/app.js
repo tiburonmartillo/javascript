@@ -4,5 +4,5 @@ eventListener();
      button.addEventListener('click',iniciarApp);
  }
  function iniciarApp(){
-     const numero=
+     const numero=Number(prompt('ingrese un número positivo'));
  }
