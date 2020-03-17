@@ -48,7 +48,6 @@ function mostrarInputs() {
     document.getElementById('btnCalcularResultado').addEventListener('click', RealizarComparación);
 }
 
-let arreglo1 = [];
 
 function RealizarComparación() {
 
@@ -59,27 +58,36 @@ function RealizarComparación() {
     for (let x = 0; x < numeroInputs.length; x++)//length es la longitud del index
     {
 
-        for(let y=x+1;y<numeroInputs.length;y++){
-            if(numeroInputs[x].value==numeroInputs[y].value){
-                numeroInputs[y].value="-";
+        for (let y = x + 1; y < numeroInputs.length; y++) {
+            if (numeroInputs[x].value == numeroInputs[y].value) {
+                numeroInputs[y].value = " ";
             }
         }
 
-        acumulador += Number(numeroInputs[x].value);
+        // acumulador += Number(numeroInputs[x].value);
         console.log(numeroInputs[x].value);
     }
 
-
+    mostrarDatos(numeroInputs);
 
 
 }
 
 function eliminarElementos() {
 
-    while (output.firstchild) {
-        
+    while (output.firstChild) {
+
         output.firstChild.remove();
     }
+}
+let Print=document.getElementById('zonaPrint');
+function mostrarDatos(numeroInputsArreglo) {
+    let strPrint='';
+    for(let x=0;x<numeroInputsArreglo.length;x++){
+        if(numeroInputsArreglo[x]!=" "){ 
+            strPrint+=`${numeroInputsArreglo[x].value}`;
 
-
+        }
+    }
+    Print.innertext=strPrint;
 }
