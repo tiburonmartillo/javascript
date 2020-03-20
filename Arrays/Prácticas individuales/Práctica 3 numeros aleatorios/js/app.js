@@ -33,6 +33,7 @@ function initApp(event) {
             
         }
         
+        lista.appendChild(numerosAleatorios);
         listaPar.appendChild(numerosAleatorios);
     }
 
