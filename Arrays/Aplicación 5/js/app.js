@@ -16,7 +16,6 @@ function fillArrayGlobal() {
         }
     }
 
-
 }
 
 function eventListener() {
