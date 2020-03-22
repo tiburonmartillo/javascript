@@ -13,18 +13,18 @@ function getSize(e) {
     if (e.target.value <= 0) return;
 
     createArray(e.target.value);
-    e.target.value = array;
+    e.target.value = array.join("");
      
 }
 
 function createArray(size) {
    
     for (let i = 0; i < size.length; i++) {
-
         array.push(size[i])
+        
     } 
     array.reverse();
-    console.log(array);
+    console.log(array.join(""));
 
 }
 function borrarInput(e) {
@@ -33,7 +33,7 @@ function borrarInput(e) {
         case 'palabra':
             e.target.value='';
             array=[];
-             console.log(`borrar`);
+             console.log(`borrar input y reiniciar valor`);
             break;
 
         }
