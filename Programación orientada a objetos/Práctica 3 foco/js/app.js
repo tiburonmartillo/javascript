@@ -1,0 +1,1 @@
+const imagen=document.getElementById('imagen'),src=
