@@ -6,13 +6,19 @@ body{
    
    border: 3px solid #000;
     position: relative;
-    height: 80vh;
+    min-height: 556px;
+    min-width: 924px;
 }
 
 .container * {
     position: absolute;
     display: block;
-    width: 7%;
-    height: 9%;
+    
+}
+
+#Carro{
+    width:80px;
+    height: 80px;
+
 }
 
