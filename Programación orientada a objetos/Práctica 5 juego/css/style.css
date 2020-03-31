@@ -1,0 +1,18 @@
+body{
+    overflow: hidden;
+}
+
+.container{
+   
+   border: 3px solid #000;
+    position: relative;
+    height: 80vh;
+}
+
+.container * {
+    position: absolute;
+    display: block;
+    width: 7%;
+    height: 9%;
+}
+
