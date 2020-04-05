@@ -1,26 +1,28 @@
 
-const contenidoTarea=document.getElementById('txtTarea');
-const listaTareas=document.getElementById('listaTareas');
-let ArrayTareas=[];
+const contenidoTarea = document.getElementById('txtTarea');
+const listaTareas = document.getElementById('listaTareas');
+
 
 eventListener();
 
-function eventListener(){
-    
-    document.querySelector('#formulario').addEventListener('submit',agreagarTarea);
-    
+function eventListener() {
+    document.querySelector('#formulario').addEventListener('submit', agreagarTarea);
+    listaTareas.addEventListener('click', eliminarTarea);
+
 }
 
-function agreagarTarea(){
+function agreagarTarea(event) {
+    
     event.preventDefault();
-    const instanciaTarea= new Tareas(contenidoTarea.value)
-instanciaTarea.agregarTareaDOM(listaTareas,true)
+    
+    if (contenidoTarea.value == "") return
+    const instanciaTarea = new Tareas(contenidoTarea.value)
+    instanciaTarea.agregarTareaDOM(listaTareas, true)
 
-    console.log(instanciaTarea);
-    
-    
-    
-   
-    
+    contenidoTarea.value = "";
+}
+
+function eliminarTarea(event) {
+    Tareas.eliminarTareaDOM(event);
 
 }
