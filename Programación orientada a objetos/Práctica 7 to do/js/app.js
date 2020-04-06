@@ -37,7 +37,7 @@ function cargardom(event){
 
     for (let i = 0; i < TareasLS.length; i++) {
         const instanciaTarea = new Tareas(TareasLS[i]);
-        instanciaTara.agregarTareaDOM(listaTareas, false);
+        instanciaTarea.agregarTareaDOM(listaTareas, false);
     }
 
 }

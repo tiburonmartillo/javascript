@@ -2,13 +2,13 @@ class TareasLocal{
 
     static ArrayTareas=[];
 
-    static AgregarTareaLocalS(ContenidoTweet){
+    static AgregarTareaLocalS(contenidoTarea){
 
         this.ArrayTareas=this.ObtenerLocalStorage();
         
         this.ArrayTareas.push(contenidoTarea);
 
-        localStorage.setItem("Tareas",JSON.stringify(this.ArrayTareas)); // localStorage almacena la información
+        localStorage.setItem("Tareas",JSON.stringify(this.ArrayTareas));
     }
 
     static ObtenerLocalStorage(){
@@ -22,12 +22,12 @@ static EliminarTareaLocalStorage(contenido){
     let tareasLS=this.ObtenerLocalStorage();
     let arrayNuevoTareasLS=[];
 
-    for(let i=0;i<tweetsLS.length;i++){
+    for(let i=0;i<tareasLS.length;i++){
         if(contenido!==tareasLS[i]){
-            arrayNuevoTweetsLS.push(tareasLS[i])
+            arrayNuevoTareasLS.push(tareasLS[i])
         }
     }
 
-    localStorage.setItem('tweets',JSON.stringify(arrayNuevoTareasLS));
+    localStorage.setItem('Tareas',JSON.stringify(arrayNuevoTareasLS));
 }
 }
