@@ -1,6 +1,8 @@
 class Tareas {
     contenido = "";
-    ManipularLocalStorage;
+    TareasLocal;
+
+   
 
     constructor(contenido) {
         this.contenido = contenido;
@@ -21,11 +23,14 @@ class Tareas {
         span.classList = "badge badge-pill text-primary"
         span.innerHTML = ` <i class="fa fa-check" aria-label="Close"></i>`;
 
-  
         
         contenedor.appendChild(li);
         li.appendChild(btnEliminar);
         btnEliminar.appendChild(span);
+
+        if (origen) TareasLocal.AgregarTareaLocalS(this.contenido);
+      
+        
     }
 
     static eliminarTareaDOM(event) { 
@@ -38,7 +43,7 @@ class Tareas {
         
         liBorrado.remove();
         
-        console.log(textoLiBorrado);
+        // console.log(textoLiBorrado);
 
         const tareasCompletas=document.getElementById('listaTareasTerminadas');
 
@@ -48,9 +53,10 @@ class Tareas {
 
         tareasCompletas.appendChild(li);
 
-        console.log('funciona');
+        // console.log('funciona');
         
+        TareasLocal.EliminarTareaLocalStorage(textoLiBorrado);
     }
-    
+
    
 }
