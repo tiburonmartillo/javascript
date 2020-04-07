@@ -38,4 +38,15 @@ class LocalStorageManipular {
     static vaciarCarritoLS(){
         localStorage.clear();
     }
+
+    static verificarCursoRepetido(idCurso){
+        const cursosLS=this.ObtenerCursoLocalStorage();
+
+        for(let i =0;i<cursosLS.length;i++){
+            if(idCurso==cursosLS[i].id){
+                return true;
+            }
+        }
+        return false;
+    }
 }
