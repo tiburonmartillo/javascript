@@ -1,5 +1,5 @@
 class Carrito {
-    AgregarCursoCarrito(informacioncurso,tablaCarrito) {
+    AgregarCursoCarrito(informacioncurso,tablaCarrito,origen) {
 
         const tableRow = document.createElement('tr');
         tableRow.innerHTML = `
@@ -16,4 +16,22 @@ class Carrito {
 
     if(origen)LocalStorageManipular.AgregarCarritoLocalStorage(informacioncurso)
     }
+
+    static eliminarCursoCarrito(nodeDom){
+        const idCurso=nodeDom.querySelector('.borrar-curso').getAttribute('data-id');
+        
+        LocalStorageManipular.eliminarCursoStorage(idCurso);
+
+        nodeDom.remove();
+       
+    }
+
+    static vaciarCarrito(tablaCursos){
+        while(tablaCursos.firstChild){
+            tablaCursos.firstChild.remove();
+        }
+
+        LocalStorageManipular.vaciarCarritoLS();
+    }
+
 }
