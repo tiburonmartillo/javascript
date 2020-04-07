@@ -1,7 +1,7 @@
 class Carrito {
     AgregarCursoCarrito(informacioncurso,tablaCarrito,origen) {
 
-        if(LocalStorageManipular.verificarCursoRepetido(informacioncurso.id))return;
+        if(LocalStorageManipular.verificarCursoRepetido(informacioncurso.id)&&origen)return;
 
         const tableRow = document.createElement('tr');
         tableRow.innerHTML = `
