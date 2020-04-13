@@ -1,0 +1,57 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.jumbotron{
+    height: 1000px;
+}
+
+#persona{
+   
+    position: relative;
+}
+
+#pantalon{
+    position: absolute;
+    left: 225px;
+    top: 280px;
+    z-index: 3;
+}
+#camisa{
+    position: absolute;
+    left: 210px;
+    top: 110px;
+    z-index: 5;
+}
+#cabeza{
+    position: absolute;
+    left: 270px;
+    top: 40px;
+    z-index: 4;
+    
+}
+#manoder{
+    position: absolute;
+    left: 365px;
+    top: 245px;
+    z-index: 6;
+}
+#manoizq{
+    position: absolute;
+    left: 240px;
+    top: 195px;
+    z-index: 7;
+}
+#pieder{
+    position: absolute;
+    left: 305px;
+    top: 560px;
+    z-index: 1;
+}
+#pieizq{
+    position: absolute;
+    left: 230px;
+    top: 565px;
+    z-index: 2;
+}
