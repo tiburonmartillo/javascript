@@ -1,0 +1,11 @@
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+// import '../src/temas Base/TipadoDatos.ts'
+// import '../src/temas Base/ifTernario.ts'
+// import './temas Base/funcionFlechas.ts'
+// import '../src/temas Base/destructuracionArrayObjetos.ts'
+// import '../src/temas Base/spreadOperator.ts'
+// import '../src/temas Base/interface.ts'
+// import './basesProgramaciónAsincrona/callback.ts'
+// import './basesProgramaciónAsincrona/callbackReforzamiento.ts'
+// import './basesProgramaciónAsincrona/promises.ts'
+import './basesProgramaciónAsincrona/promesasReforzamiento.ts'
