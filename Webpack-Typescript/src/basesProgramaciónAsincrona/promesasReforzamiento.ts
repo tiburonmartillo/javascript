@@ -78,7 +78,7 @@ const obteneridCarrera=(id:number)=>{
     });
 };
 
-const obtenerNombrecCarrera=(id:number){
+const obtenerNombreCarrera=(id:number)=>{
     return new Promise((resolve,reject)=>{
         const obntenerIDcarrera=carrera.find((carrera)=>carrera.idCarrera==id);
         if(carrera) return resolve(obntenerIDcarrera?.carrera)
@@ -94,7 +94,7 @@ const obteneridCentro=(nombre:string)=>{
         }else{
             reject(`No se encuentra la carrera ${nombre}`)
         }
-    })
+    });
 };
 
 
@@ -103,10 +103,21 @@ const obtenernombreCentro=(idCentro:number)=>{
         const nombreCentro=centroestudios.find((centroestudios)=>centroestudios.id==idCentro)
         if(idCentro){
             resolve(nombreCentro?.Nombre)
-        }
+        }reject(`no existe ese centro`)
 
-    })
-}
+    });
+};
+
+const obtenerNombreAlumno=(nombre:string)=>{
+    return new Promise((resolve,reject)=>{
+        const nombreAlumno=alumno.find((alumno)=>alumno.Nombre==nombre)
+        if(nombre){
+            resolve(nombreAlumno?.idCarrera)
+        }reject(`no existe el alumno ${nombre}`)
+
+    });
+};
+
 
 
 /********ejercicio 2+*********
@@ -115,18 +126,18 @@ const obtenernombreCentro=(idCentro:number)=>{
 
 obteneridCarrera(2)
   .then((mensaje:any)=>{
-      console.log('ejecucion de resolve');
+    //   console.log('ejecucion de resolve');
       console.log(mensaje);
 
-      obtenerNombrecCarrera(mensaje)
+      obtenerNombreCarrera(mensaje)
       .then((respuesta:any)=>{
-          console.log(respuesta);
+          console.log(`El alumno con id 2 estudia la carrera de ${respuesta}`);
           
       })
     
       })
 .catch((reject:string)=>{
-   console.log('ejecucion reject');
+//    console.log('ejecucion reject');
     console.log(reject);
 });
 
@@ -144,4 +155,20 @@ obteneridCentro('Nutricion')
         
     })
     
-})
+});
+
+/********ejercicio 4+*********
+ 
+ ********+*********/
+
+
+obtenerNombreAlumno('Victor Lemus')
+.then((tipo:any)=>{
+    console.log(tipo);
+    obtenernombreCentro(tipo)
+    .then((fria:any)=>{
+        console.log(`El centro de estudio al que pertenece el alumno Victor Lemus es ${fria}`);
+        
+    })
+    
+});

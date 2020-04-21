@@ -69,7 +69,7 @@ let Personas: Array<Persona> = [
   
 
 
-  const getSalario = (Empleado:Persona):Promise<resolveFinal> =>{// Persona es para obtener las caracteristicas de la imterfaz Persona
+  const getSalario = (Empleado:Persona) =>{// Persona es para obtener las caracteristicas de la imterfaz Persona
 new Promise((resolve,reject)=>{
 
         const salarioEmpleado=Salario.find((salario)=>salario.id==Empleado.id);
@@ -89,8 +89,8 @@ new Promise((resolve,reject)=>{
       console.log(mensaje);
 
       getSalario(mensaje)
-      .then((resolve)=>{
-          console.log(`el emplead: ${resolve.nombre} gana un salario de: ${resolve.salario}`);
+      .then((mensaje)=>{
+          console.log(`el emplead: ${mensaje.nombre} gana un salario de: ${mensaje.salario}`);
     
       })
       .catch((reject:string)=>console.log(reject));
