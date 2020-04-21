@@ -8,4 +8,5 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 // import './basesProgramaciónAsincrona/callback.ts'
 // import './basesProgramaciónAsincrona/callbackReforzamiento.ts'
 // import './basesProgramaciónAsincrona/promises.ts'
-import './basesProgramaciónAsincrona/promesasReforzamiento.ts'
+// import './basesProgramaciónAsincrona/promesasReforzamiento.ts'
+import './basesProgramaciónAsincrona/async-awaits.ts'

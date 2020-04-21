@@ -6,7 +6,10 @@ export interface Persona{
     sexo:string, 
     estatura?:number,
 }
-
+export interface Salario{
+    id:number,
+    salario:number,
+}
 
 export interface Alumnos{
 

@@ -83,20 +83,20 @@ new Promise((resolve,reject)=>{
 });
   };
 
-  getEmpleado(3)
-  .then((mensaje:any)=>{
-      console.log('ejecucion de resolve');
-      console.log(mensaje);
+  // getEmpleado(3)
+  // .then((mensaje:any)=>{
+  //     console.log('ejecucion de resolve');
+  //     console.log(mensaje);
 
-      getSalario(mensaje)
-      .then((mensaje)=>{
-          console.log(`el emplead: ${mensaje.nombre} gana un salario de: ${mensaje.salario}`);
+  //     getSalario(mensaje)
+  //     .then((mensaje)=>{
+  //         console.log(`el emplead: ${mensaje.nombre} gana un salario de: ${mensaje.salario}`);
     
-      })
-      .catch((reject:string)=>console.log(reject));
+  //     })
+  //     .catch((reject:string)=>console.log(reject));
       
-    })//then recibe el parametro de resolve y funciona cuando es exitosa
-  .catch((reject:string)=>{
-    console.log('ejecucion de reject');
-    console.log(reject)
-  });// catch recibe el parametro de reject cuando no es exitosa la función
+  //   })//then recibe el parametro de resolve y funciona cuando es exitosa
+  // .catch((reject:string)=>{
+  //   console.log('ejecucion de reject');
+  //   console.log(reject)
+  // });// catch recibe el parametro de reject cuando no es exitosa la función
