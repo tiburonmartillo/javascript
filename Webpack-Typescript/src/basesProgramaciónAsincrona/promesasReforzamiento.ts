@@ -1,6 +1,4 @@
-import { Alumnos } from "./../temas Base/interface";
-import { Carrera } from "./../temas Base/interface";
-import { CentroEstudios } from "./../temas Base/interface";
+import { Alumnos, Carrera, CentroEstudios } from "./../temas Base/interface";
 
 const alumno: Array<Alumnos> = [
     {
