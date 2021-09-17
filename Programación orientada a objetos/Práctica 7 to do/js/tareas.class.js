@@ -21,7 +21,7 @@ class Tareas {
 
         const span = document.createElement('span');
         span.classList = "badge badge-pill text-primary"
-        span.innerHTML = ` <i class="fa fa-check" aria-label="Close"></i>`;
+        span.innerHTML = 'X';
 
         
         contenedor.appendChild(li);
