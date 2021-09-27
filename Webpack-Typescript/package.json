@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
-    "glob-parent": ">=5.1.2"
+    "glob-parent": ">=5.1.2",
+    "nth-check": ">=2.0.1"
   }
 }
